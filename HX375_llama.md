@@ -136,3 +136,8 @@ SW: Ubuntu 24.02.2 LTS
    ====================================================================================================================
    =============================================== End of ROCm SMI Log ================================================
    ```
+## Step 5: Uninstall driver/ROCm (if needed)
+   ```bash
+   sudo amdgpu-install --uninstall
+   sudo apt-get purge amdgpu-install
+   ```
