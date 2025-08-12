@@ -64,3 +64,39 @@ ollama pull tinyllama
 ```bash
 ollama run tinyllama
 ```
+## Debug commands
+
+reference:
+
+https://github.com/ollama/ollama/blob/main/docs/gpu.md
+
+https://github.com/ollama/ollama/blob/main/docs/troubleshooting.md
+
+Debug commands
+```bash
+sudo systemctl restart ollama
+
+sudo systemctl daemon-reload  
+
+sudo systemctl stop ollama
+
+sudo systemctl start ollama
+
+sudo systemctl status ollama
+
+ollama serve
+
+
+export HSA_OVERRIDE_GFX_VERSION=11.0.0
+
+
+sudo journalctl --unit=ollama --vacuum-time=1s
+
+sudo journalctl -u ollama --no-pager --follow --pager-end
+
+sudo vi /etc/systemd/system/ollama.service
+
+```
+
+current status:
+After applied the HSA override command, ollama daemon could start. But it will run into vram allocation error when chat started. Maybe 890M iGPU with type of gfx 1150 is too new which is not good supported by ollama
