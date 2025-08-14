@@ -61,10 +61,12 @@ sudo vi /etc/systemd/system/ollama.service
 ```
 
 It looks like following:
-The env OLLAMA_MODELS could point to anywhere you want to store your models
+The env OLLAMA_MODELS could point to anywhere you want to store your models. 
+enable the internet access from anywhere to port 11434
 
 ```
 [Service]
+Environment="OLLAMA_HOST=0.0.0.0:11435"
 Environment="HSA_OVERRIDE_GFX_VERSION=11.0.0"
 Environment="OLLAMA_MODELS=/home1/jon/ollama/.ollama"
 ```
