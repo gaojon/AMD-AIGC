@@ -66,7 +66,6 @@ enable the internet access from anywhere to port 11434
 
 ```
 [Service]
-Environment="OLLAMA_HOST=0.0.0.0:11435"
 Environment="HSA_OVERRIDE_GFX_VERSION=11.0.0"
 Environment="OLLAMA_MODELS=/home1/jon/ollama/.ollama"
 ```
@@ -80,6 +79,8 @@ sudo systemctl start ollama.service
 sudo journalctl -u ollama.service --no-pager --follow --pager-end
 
 ```
+
+Notes: Ollama will start service with ollama user, so make sure the ollama user has the full access permission of models directory. 
 
 ## Post-Installation Commands
 1. List available models:
