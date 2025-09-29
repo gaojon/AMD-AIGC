@@ -1,5 +1,11 @@
-reference to 
+
+
+Reference to for more details
 https://github.com/infiniflow/ragflow
+
+## Environment
+Hardware: HX370
+Operating System: Ubuntu 2024.04 LTS
 
 ## Get the RAGFlow
 
