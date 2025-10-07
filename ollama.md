@@ -98,6 +98,12 @@ ollama pull tinyllama
 ```bash
 ollama run tinyllama
 ```
+## Check the API is working
+```
+curl http://192.168.1.38:11434/v1/models
+{"object":"list","data":[{"id":"qwen2.5:14b","object":"model","created":1758880151,"owned_by":"library"},{"id":"qwen2.5:7b","object":"model","created":1758879831,"owned_by":"library"},{"id":"qwen2.5:1.5b","object":"model","created":1758877705,"owned_by":"library"}]}
+```
+
 
 ## Make sure it's running with GPU not CPU
 
