@@ -91,8 +91,11 @@ Check the log to see if it's running successfully
 open a brower to access:
 http://localhost:80
 
-first time need to register and login
+First time need to register and login
 
 
 dataset->Create Dataset->Input Dataset Name->Add file
 
+Here is the guide to add LLM provider. This is an example with ollama
+
+https://github.com/infiniflow/ragflow/blob/main/docs/guides/models/deploy_local_llm.mdx
