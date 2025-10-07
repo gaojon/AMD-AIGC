@@ -68,6 +68,7 @@ enable the internet access from anywhere to port 11434
 [Service]
 Environment="HSA_OVERRIDE_GFX_VERSION=11.0.0"
 Environment="OLLAMA_MODELS=/home1/jon/ollama/.ollama"
+Environment="OLLAMA_HOST=0.0.0.0"
 ```
 
 Reload service configuration and check the log to make sure it started successfully
